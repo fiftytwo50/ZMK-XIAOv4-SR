@@ -8,9 +8,6 @@
         zmk,matrix_transform = &default_transform;
     };
 
-    vbatt: vbatt {
-	compatible = "zmk,battery-nrf-vddh";
-    };
  
      default_transform: keymap_transform_0 {
          compatible = "zmk,matrix-transform";
@@ -31,7 +28,6 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5)		    RC(3,6) RC(3,7) RC(3,8) RC(
      kscan0: kscan_0 {
         compatible = "zmk,kscan-gpio-matrix";
         wakeup-source;
-
         diode-direction = "col2row";
         row-gpios
              = <&gpio1 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> //r1-7 1.15 0.28 1.01 0.09 0.10 1.11 1.07thumbs
