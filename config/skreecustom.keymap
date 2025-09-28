@@ -10,7 +10,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/rgb.h>
 
 / {
     keymap {
@@ -18,37 +17,41 @@
 
         default_layer {
             bindings = <
-&kp Q &kp Q &kp Q &kp Q &kp Q &kp Q             &kp Q &kp Q &kp Q &kp Q &kp Q &kp Q
-&kp Q &kp Q &kp Q &kp Q &kp Q &kp Q             &kp Q &kp Q &kp Q &kp Q &kp Q &kp Q
-&kp Q &kp Q &kp Q &kp Q &kp Q &kp Q             &kp Q &kp Q &kp Q &kp Q &kp Q &kp Q
-            &kp Q &kp Q &kp Q &kp Q &kp Q &kp Q &kp Q &kp Q &kp Q &kp Q 
+&kp ESC    &kp Q  &kp W   &kp E     &kp R   &kp T     &kp Y   &kp U      &kp I     &kp O      &kp P      &kp LBKT
+&kp TAB    &kp A  &kp S   &kp D     &kp F   &kp G     &kp H   &kp J      &kp K     &kp L      &kp SEMI   &kp SQT
+&kp LSHFT  &kp Z  &kp X   &kp C     &kp V   &kp B     &kp M   &kp COMMA  &kp DOT   &kp FSLH   &kp MINUS  &kp EQUAL
+                  &kp UP  &kp DOWN                                       &kp LEFT  &kp RIGHT
+                          &kp N1    &kp N2  &kp N3    &kp N4  &kp N5     &kp N6
             >;
         };
 
         layer_1 {
             bindings = <
-&trans &trans &trans &trans &trans &trans             &trans &trans &trans &trans &trans &trans
-&trans &trans &trans &trans &trans &trans             &trans &trans &trans &trans &trans &trans
-&trans &trans &trans &trans &trans &trans             &trans &trans &trans &trans &trans &trans
-            &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
+&bt BT_CLR  &bt BT_NXT  &bt BT_PRV  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans      &trans      &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans      &trans      &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans      &trans                                    &trans  &trans
+                                    &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
         layer_2 {
             bindings = <
-&trans &trans &trans &trans &trans &trans             &trans &trans &trans &trans &trans &trans
-&trans &trans &trans &trans &trans &trans             &trans &trans &trans &trans &trans &trans
-&trans &trans &trans &trans &trans &trans             &trans &trans &trans &trans &trans &trans
-            &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans                                    &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
         layer_3 {
             bindings = <
-&trans &trans &trans &trans &trans &trans             &trans &trans &trans &trans &trans &trans
-&trans &trans &trans &trans &trans &trans             &trans &trans &trans &trans &trans &trans
-&trans &trans &trans &trans &trans &trans             &trans &trans &trans &trans &trans &trans
-            &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans                                    &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
