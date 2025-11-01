@@ -3,55 +3,53 @@
  *
  * SPDX-License-Identifier: MIT
  */
-
 //#include <behaviors/mouse_keys.dtsi>
+
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/rgb.h>
 
 / {
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        default {
             bindings = <
-&kp TAB    &kp Q   &kp W   &kp E      &kp R      &kp T       &kp Y    &kp U     &kp I      &kp O    &kp P     &kp NUBS
-&kp ESC    &kp A   &kp S   &kp D      &kp F      &kp G       &kp H    &kp J     &kp K      &kp L    &kp SEMI  &kp SQT
-&kp CAPS   &kp Z   &kp X   &kp C      &kp V      &kp B       &kp N    &kp M     &kp COMMA  &kp DOT  &kp FSLH  &lt 1 GRAVE
-                           &kp F4     &kp LEFT   &kp RIGHT   &kp UP   &kp DOWN  &kp BSLH
-                                      &kp LSHFT  &kp BSPC    &kp ENTER  &kp SPACE
+&kp TAB   &kp Q  &kp W   &kp E     &kp R      &kp T  &kp Y      &kp U      &kp I      &kp O     &kp P     &kp NUBS
+&kp ESC   &kp A  &kp S   &kp D     &kp F      &kp G  &kp H      &kp J      &kp K      &kp L     &kp SEMI  &kp SQT
+&kp CAPS  &kp Z  &kp X   &kp C     &kp V      &kp B  &kp N      &kp M      &kp COMMA  &kp DOT   &kp FSLH  &lt 3 GRAVE
+                 &kp F4  &kp LEFT  &kp RIGHT                    &kp UP     &kp DOWN   &kp BSLH
+                                   &kp LSHFT  &mo 1  &kp ENTER  &kp SPACE
             >;
         };
 
-        layer_1 {
+        numpad {
             bindings = <
-&bt BT_CLR       &bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans  &trans
-&studio_unlock   &trans           &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans           &trans           &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                                  &trans        &trans        &bootloader   &trans          &trans  &trans
-                                                              &trans        &trans          &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp N7  &kp N8  &kp N9  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp N4  &kp N5  &kp N6  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp N1  &kp N2  &kp N3  &trans  &trans
+                &trans  &trans  &trans                  &kp N0  &trans  &trans
+                                &trans  &trans  &trans  &trans
             >;
         };
 
-        layer_2 {
+        Fkeys {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans       &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans       &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans       &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans       &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &bootloader  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans                  &trans  &trans  &trans
+                                &trans  &trans  &trans  &trans
             >;
         };
 
-        layer_3 {
+        layer_BT {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans  &trans  &trans  &trans  &trans
+&studio_unlock  &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans
+                              &trans        &trans        &bootloader                         &trans  &trans  &trans
+                                                          &trans        &trans        &trans  &trans
             >;
         };
     };
