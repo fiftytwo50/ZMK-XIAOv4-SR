@@ -24,7 +24,7 @@
 &kp LSHFT  &kp A   &kp S   &kp D      &kp F      &kp G       &kp H    &kp J     &kp K      &kp L    &kp SEMI  &kp SQT
 &kp GRAVE  &kp Z   &kp X   &kp C      &kp V      &kp B       &kp N    &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp BSLH
                            &kp LCTRL  &kp SPACE  &kp BSPC    &kp DEL  &kp RET   &kp RGUI
-                                      &kp LALT   &mo 1       &mo 2    &kp RALT
+                           &kp RALT  &kp LALT   &mo 1       &mo 2    &kp RALT  &kp RALT
             >;
         };
 
@@ -36,7 +36,7 @@
 &trans      &trans      &trans      &trans          &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans      &trans      &trans      &trans          &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                                     &trans          &trans  &trans    &trans  &trans  &trans
-                                                    &trans  &trans    &trans  &trans
+                                    &trans          &trans  &trans    &trans  &trans  &trans
             >;
         };
 
@@ -48,7 +48,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans  &trans
-                                &trans  &trans    &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
@@ -60,7 +60,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans  &trans
-                                &trans  &trans    &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
