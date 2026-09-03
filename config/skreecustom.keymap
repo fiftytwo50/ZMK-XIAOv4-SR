@@ -24,6 +24,7 @@
                                          &kp RGUI   &kp RCTRL                                &kp HOME  &kp PG_UP
                                                     &mo 1                                    &kp BSPC
                               &kp ENTER  &kp SPACE                                                     &kp END    &kp PG_DN
+                                                    &kp Q                                    &kp Y
             >;
         };
 
