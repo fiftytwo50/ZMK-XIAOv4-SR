@@ -38,6 +38,7 @@
                                      &trans     &trans                      &trans    &trans
                                                 &trans                      &trans
                            &trans    &trans                                           &trans     &kp KP_NUMBER_0
+&trans &trans
             >;
         };
 
@@ -51,6 +52,7 @@
                                 &trans  &trans                    &trans  &trans
                                         &trans                    &trans
                         &trans  &trans                                    &trans  &trans
+&trans &trans
             >;
         };
 
@@ -64,6 +66,7 @@
                                 &trans  &trans                    &trans  &trans
                                         &trans                    &trans
                         &trans  &trans                                    &trans  &trans
+&trans &trans
             >;
         };
     };
